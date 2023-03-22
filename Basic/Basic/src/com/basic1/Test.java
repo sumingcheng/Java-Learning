@@ -46,5 +46,6 @@ public class Test {
         System.out.println(test1.a);
         System.out.println(test1.getB());
         System.out.println(test1.getContent());
+        System.out.printf(Test1.myName);
     }
 }
