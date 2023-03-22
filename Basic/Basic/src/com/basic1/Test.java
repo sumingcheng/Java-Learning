@@ -47,5 +47,10 @@ public class Test {
         System.out.println(test1.getB());
         System.out.println(test1.getContent());
         System.out.printf(Test1.myName);
+        if (test1.mySwitch) {
+            System.out.println("true");
+        } else {
+            System.out.println("false");
+        }
     }
 }
