@@ -2,7 +2,6 @@ package com.numerationsystem;
 
 public class Test6 {
     public static void main(String[] args) {
-//        TODO
         /*
          * 位运算
          * & 二进制数据对应位相都位1时，结果才为1，否则为0
