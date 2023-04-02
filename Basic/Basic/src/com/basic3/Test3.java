@@ -37,10 +37,22 @@ public class Test3 {
          * 这里强调！精度丢失，不会丢失符号位，所以是负数
          * */
 
-        int a = 200;
-        byte b = (byte) a;
+//        int a = 200;
+//        byte b = (byte) a;
+//
+//        System.out.println(b); // -56
 
-        System.out.println(b); // -56
+        int a = 128; // int 4 byte
+        byte b = (byte) a; // byte 1 byte
+
+        /*
+        * a = 32个0 + 1000 0000
+        * 转到 byte 前面都省去了 只留下8位
+        * b = 1000 0000 = -128  // 原码
+        * b = 1111 1111  // 反码
+        * b = 1000 00000  // 补码  九位，超出了8位，剩下 0000 0000 加上符号位，所以是负数 -128
+        * */
+
 
     }
 }
