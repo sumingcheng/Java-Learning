@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5763d0b-dfdf-4743-8e9f-dcb1a5093b5a" name="Changes" comment="数据类型">
-      <change afterPath="$PROJECT_DIR$/Basic/Basic/src/com/basic4/Test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basic/Basic/src/com/basic4/Test2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basic/Basic/src/com/basic4/Test3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basic/Basic/src/com/numerationsystem/Test7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basic/Basic/src/com/basic4/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/Basic/src/com/basic3/Test3.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/Basic/src/com/basic3/Test3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,9 +51,9 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="应用程序.com.basic4.Test2">
-    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.basic4.Test1" />
+  <component name="RunManager" selected="应用程序.Test">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.basic4.Test" />
       <module name="Basic" />
       <extension name="coverage">
         <pattern>
@@ -69,12 +65,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.basic2.Test2" />
+    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.basic4.Test1" />
       <module name="Basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.basic2.*" />
+          <option name="PATTERN" value="com.basic4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Test" />
         <item itemvalue="应用程序.com.basic4.Test2" />
         <item itemvalue="应用程序.com.basic4.Test3" />
         <item itemvalue="应用程序.Test1" />
         <item itemvalue="应用程序.Test3" />
-        <item itemvalue="应用程序.Test2" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +150,7 @@
       <workItem from="1679816812741" duration="1669000" />
       <workItem from="1679923614922" duration="3529000" />
       <workItem from="1680415897489" duration="1991000" />
-      <workItem from="1680419119518" duration="13343000" />
+      <workItem from="1680419119518" duration="15382000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1679491564022</created>
@@ -219,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679929278339</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="数据类型">
+      <created>1680444220724</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1680444220724</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
