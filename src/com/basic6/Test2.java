@@ -11,14 +11,15 @@ public class Test2 {
         String _password;
 
         do {
-            System.out.println("请输入用户名：");
+            System.out.println("Please enter your username: ");
             _userName = scanner.next();
         } while (!_userName.equals(userName));
 
         do {
-            System.out.println("请输入密码：");
+            System.out.println("Please enter your password: ");
             _password = scanner.next();
         } while (!_password.equals(password));
 
+        System.out.println("Login successfully!");
     }
 }
