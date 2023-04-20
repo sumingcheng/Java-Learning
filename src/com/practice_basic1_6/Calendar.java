@@ -1,7 +1,7 @@
 package com.practice_basic1_6;
 
 /*
- * 1900 年 1 月 1 日 是 星期一
+ * 要根据1—6的练习的Calendar来拆方法
  * */
 
 import java.util.Scanner;
