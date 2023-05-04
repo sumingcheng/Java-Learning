@@ -31,6 +31,11 @@ public class Test8 {
         } else {
             System.out.println("数字" + userNumber + "不存在");
         }
+
+        int maximumValue = findTheMaximumValue(numberContainer, "MAX");
+        System.out.println("最大值:" + maximumValue);
+        int minimumValue = findTheMaximumValue(numberContainer, "MIX");
+        System.out.println("最小值:" + maximumValue);
     }
 
     public static int[] createNumberContainer (int numberCount, int maxRandomNumber) {
@@ -51,5 +56,28 @@ public class Test8 {
             }
         }
         return _isFound;
+    }
+
+    public static int findTheMaximumValue (int[] numberContainer, String type) {
+        int finalNumber = numberContainer[0];
+        int len = numberContainer.length;
+
+        for (int i = 1; i < len; i++) {
+            switch (type) {
+                case "MAX":
+                    if (numberContainer[i] > finalNumber) {
+                        finalNumber = numberContainer[i];
+                    }
+                    break;
+                case "MIX":
+                    if (numberContainer[i] < finalNumber) {
+                        finalNumber = numberContainer[i];
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
+        return finalNumber;
     }
 }
