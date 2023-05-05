@@ -28,8 +28,6 @@ public class BubbleSort {
                     temp = _arr[i];
                     _arr[i] = _arr[i + 1];
                     _arr[i + 1] = temp;
-                } else {
-
                 }
             }
 
