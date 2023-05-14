@@ -6,9 +6,7 @@ public class insertionSort {
     public static void main (String[] args) {
         int[] arr = {4, 2, 6, 3, 1, 5};
 
-        StraightInsertionSort(arr);
-
-        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(StraightInsertionSort(arr)));
     }
 
     public static int[] StraightInsertionSort (int[] arr) {
@@ -16,12 +14,14 @@ public class insertionSort {
 
         for (int i = 1; i < _arr.length; i++) {
             int temp = _arr[i];
-            int j = i - 1;
-
-            while (j >= 0 && _arr[j] > temp) {
-                _arr[j + 1] = _arr[j];
-                // TODO 重点理解这个地方
-                j--;
+            int j = 0;
+            for (j = i - 1; j >= 0; j--) {
+                // TODO 重点
+                if (_arr[j] > temp) {
+                    _arr[j + 1] = _arr[j];
+                } else {
+                    break;
+                }
             }
             _arr[j + 1] = temp;
         }
