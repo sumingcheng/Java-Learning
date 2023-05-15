@@ -2,7 +2,7 @@ package com.arraylgorthm;
 
 public class binarySearch {
     public static void main (String[] args) {
-        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int[] arr = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int target = 7;
         int index = BinarySearch(arr, target);
         System.out.println("Index of " + target + " is: " + index);
@@ -14,6 +14,7 @@ public class binarySearch {
 
         while (left <= right) {
             int mid = left + (right - left) / 2;
+            System.out.println(mid);
             if (arr[mid] == target) {
                 return mid;
             } else if (arr[mid] < target) {
