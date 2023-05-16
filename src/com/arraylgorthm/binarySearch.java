@@ -1,9 +1,14 @@
 package com.arraylgorthm;
 
+import java.util.Scanner;
+
 public class binarySearch {
     public static void main (String[] args) {
         int[] arr = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        int target = 7;
+        System.out.println("请输入你要查找的数");
+        Scanner sc = new Scanner(System.in);
+        int target = sc.nextInt();
+
         int index = BinarySearch(arr, target);
         System.out.println("Index of " + target + " is: " + index);
     }
@@ -13,8 +18,8 @@ public class binarySearch {
         int right = arr.length - 1;
 
         while (left <= right) {
-            int mid = left + (right - left) / 2;
-            System.out.println(mid);
+            int mid = (left + right) >>> 1;
+
             if (arr[mid] == target) {
                 return mid;
             } else if (arr[mid] < target) {
