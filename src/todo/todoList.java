@@ -13,7 +13,6 @@ public class todoList {
         *  content: "todo",
         *  status: '已完成'
         * }
-        *
         * */
     }
     // 初始化todoList
