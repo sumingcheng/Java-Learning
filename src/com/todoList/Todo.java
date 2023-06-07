@@ -14,8 +14,8 @@ public class Todo {
         this.completed = completed;
     }
 
-    public int setId (int id) {
-        return this.id = id;
+    public void setId (int id) {
+        this.id = id;
     }
 
     public int getId () {
