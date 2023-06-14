@@ -8,8 +8,8 @@ public class MobilePhone extends Product {
     protected MobilePhone () {
     }
 
-    protected MobilePhone (String cpu, String rom, String ram, String name, String category, double price) {
-        super(name, category, price);
+    protected MobilePhone (String cpu, String rom, String ram, String name, String category, double price, String color) {
+        super(name, category, price, color);
         this.cpu = cpu;
         this.rom = rom;
         this.ram = ram;
