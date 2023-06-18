@@ -1,4 +1,4 @@
-package com.oop3;
+package com.oop_1;
 
 public class IOSPhone extends MobilePhone {
     private static String sytem = "IOS";
