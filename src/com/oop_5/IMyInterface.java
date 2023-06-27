@@ -34,5 +34,51 @@ public interface IMyInterface {
         System.out.println("staticMethod1");
     }
 
+    // 私有方法
+    /*
+     * 1. Java 8 新增的特性
+     * 2. Java 9 支持静态方法的私有化
+     * 3. 接口的私有方法：提供给默认方法或静态方法调用，但是写法不同
+     * 4. 接口内部的方法可以使用，不能被外部调用
+     * 5. private 不能省略
+     * */
 
+    public default void defaultMethod2 () {
+        privateMethod1("私有方法1");
+        System.out.println("defaultMethod2");
+    }
+
+    public default void defaultMethod3 () {
+        privateMethod1("私有方法2");
+        System.out.println("defaultMethod3");
+    }
+
+    private void privateMethod1 (String Content) {
+        System.out.println(Content);
+    }
+
+    // 接口常量 (public static final) 接口不是类，没有构造方法
+    /*
+     * 1. 常量必须是公开的
+     * 2. 定义时必须赋值
+     * 3. 常量名必须大写
+     * 4. 实现类可以直接继承接口常量
+     * 5. 常量可以在有方法体的方法中使用
+     * */
+
+    // 省略写法
+    public static final String CONSTANT1 = "常量1";
+    static final String CONSTANT2 = "常量2";
+    final String CONSTANT4 = "常量4";
+    String CONSTANT3 = "常量3";
+
+    // 静态代码块
+    /*
+     * 1. 接口里不允许有静态代码块
+     * */
+
+    // 构造方法
+    /*
+     * 1. 接口里不允许有构造方法
+     * */
 }

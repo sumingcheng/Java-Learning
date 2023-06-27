@@ -8,5 +8,8 @@ public class Test {
         myInterfaceImpl.defaultMethod1();
         // 静态方法,必须用接口名调用
         IMyInterface.staticMethod1();
+        // 默认方法调用私有方法
+        myInterfaceImpl.defaultMethod2();
+        myInterfaceImpl.defaultMethod3();
     }
 }
