@@ -5,8 +5,9 @@ package com.DesignPattern.template_method;
  * */
 public class Test {
     public static void main (String[] args) {
-        UserController userController = new UserController();
-        userController.getUserInfo();
-
+//        UserController userController = new UserController();
+//        userController.getUserInfo();
+        AdminController adminController = new AdminController();
+        adminController.accessAPI("getUserInfo");
     }
 }

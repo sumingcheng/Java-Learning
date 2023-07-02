@@ -23,7 +23,7 @@ public class UserController {
 
     public void getUserInfo () {
         if (loginAction()) {
-            System.out.println("获取用户信息");
+            System.out.println("获取用户信息 success");
         } else {
             getUserInfo();
         }
@@ -31,7 +31,7 @@ public class UserController {
 
     public void getUserLikes () {
         if (loginAction()) {
-            System.out.println("获取用户喜欢");
+            System.out.println("获取用户喜欢 success");
         } else {
             getUserLikes();
         }
@@ -39,7 +39,7 @@ public class UserController {
 
     public void getUserFlloing () {
         if (loginAction()) {
-            System.out.println("获取用户关注");
+            System.out.println("获取用户关注 success");
         } else {
             getUserFlloing();
         }
