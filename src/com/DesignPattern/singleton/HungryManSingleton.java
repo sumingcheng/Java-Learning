@@ -1,4 +1,4 @@
-package com.DesignPattern;
+package com.DesignPattern.singleton;
 
 /*
  * 创建单例的方法

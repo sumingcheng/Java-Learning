@@ -1,4 +1,4 @@
-package com.DesignPattern;
+package com.DesignPattern.singleton;
 
 public class StaticSingleton {
     private StaticSingleton () {
