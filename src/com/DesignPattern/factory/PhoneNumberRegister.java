@@ -6,15 +6,15 @@ public class PhoneNumberRegister extends Register {
 
     @Override
     void register (String phoneNumber, String phonePassword) {
-        if (phoneNumber == null || phonePassword == null) {
-            System.out.println("手机号或密码不能为空");
+        if (!checkAccount("PHONE_NUMBER", phoneNumber, phonePassword)) {
+            System.out.println("手机号或密码不符合要求");
             return;
         }
         registerAction();
         System.out.println("Register by phone number");
     }
 
-    void registerAction () {
+    private void registerAction () {
         System.out.println("手机号注册成功");
     }
 }

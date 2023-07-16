@@ -6,15 +6,15 @@ public class UsernameRegister extends Register {
 
     @Override
     void register (String username, String password) {
-        if (username == null || password == null) {
-            System.out.println("用户名或密码不能为空");
+        if (!checkAccount("USERNAME", username, password)) {
+            System.out.println("用户名或密码不符合要求");
             return;
         }
         registerAction();
         System.out.println("Register by username");
     }
 
-    void registerAction () {
+    private void registerAction () {
         System.out.println("用户名注册成功");
     }
 }
