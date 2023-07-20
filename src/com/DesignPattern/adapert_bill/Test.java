@@ -7,7 +7,18 @@ package com.DesignPattern.adapert_bill;
  * */
 public class Test {
     public static void main (String[] args) {
-//        IBillForCloth billForCloth = new BillAdapter(new BillForElectricity());
-//        billForCloth.generateBill();
+        IBillForCloth billForCloth = new BillForCloth();
+        billForCloth.generateBill();
+
+//        IBillForElectricity billForElectricity = new BillForElectricity();
+//        billForElectricity.generateBill();
+
+        IBillForElectricity billForElectricity = new BillForElectricity();
+        BillAdapter billAdapter = new BillAdapter(billForElectricity);
+        generateBill(billAdapter);
+    }
+
+    public static void generateBill (IBillForCloth billForCloth) {
+        billForCloth.generateBill();
     }
 }
