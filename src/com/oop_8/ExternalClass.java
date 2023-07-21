@@ -4,7 +4,7 @@ public class ExternalClass {
     private final String name = "ExternalClass";
     private final ExternalClass externalClass = this;
 
-    public class InnernalClass {
+    public class InternalClass {
         public void test () {
             System.out.println(name);
             externalClass.test();

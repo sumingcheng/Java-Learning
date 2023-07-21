@@ -6,7 +6,7 @@ public class Test {
 //        externalClass.test();
 
         // new　内部类
-        ExternalClass.InnernalClass innernalClass = externalClass.new InnernalClass();
-        innernalClass.test();
+        ExternalClass.InternalClass internalClass = externalClass.new InternalClass();
+        internalClass.test();
     }
 }
