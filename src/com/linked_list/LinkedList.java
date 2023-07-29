@@ -2,20 +2,20 @@ package com.linked_list;
 
 /**
  * {
- *   number: 5,
- *   nextNode: {
- *     number: 4,
- *     nextNode: {
- *       number: 3,
- *       nextNode: {
- *         number: 2,
- *         nextNode: {
- *           number: 1:
- *           nextNode: null
- *         }
- *       }
- *     }
- *   }
+ * number: 5,
+ * nextNode: {
+ * number: 4,
+ * nextNode: {
+ * number: 3,
+ * nextNode: {
+ * number: 2,
+ * nextNode: {
+ * number: 1:
+ * nextNode: null
+ * }
+ * }
+ * }
+ * }
  * }
  */
 
@@ -24,14 +24,15 @@ public class LinkedList {
     private Node rootNode; // null
     private int currentPosition = 0;
 
-    public LinkedList () {}
+    public LinkedList () {
+    }
 
     public void add (int number) {
-       if (rootNode == null) {
-           rootNode = new Node(number);
-       } else {
-           rootNode.addNode(number);
-       }
+        if (rootNode == null) {
+            rootNode = new Node(number);
+        } else {
+            rootNode.addNode(number);
+        }
     }
 
     public boolean remove (int number) {
@@ -92,7 +93,8 @@ public class LinkedList {
         // 本节点的下一个节点
         private Node nextNode;
 
-        public Node () {}
+        public Node () {
+        }
 
         public Node (int number) {
             this.number = number;
@@ -152,7 +154,7 @@ public class LinkedList {
         // 插入节点
         public boolean insertNode (int position, int number) {
             if (nextNode == null) return false;
-            currentPosition ++;
+            currentPosition++;
 
             if (position == currentPosition) {
                 Node newNode = new Node(number);
