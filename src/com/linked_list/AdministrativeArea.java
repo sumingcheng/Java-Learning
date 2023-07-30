@@ -3,21 +3,27 @@ package com.linked_list;
 import java.util.Arrays;
 
 interface IProvince {
-    ICity addCity(String cityName);
-    ICity[] getCityList();
+    ICity addCity (String cityName);
+
+    ICity[] getCityList ();
+
     int getCityLength ();
-    String getProvinceName();
+
+    String getProvinceName ();
 }
 
 interface ICity {
-    ICounty[] getCountyList();
-    int getCountyLength();
-    ICounty addCounty(String countyName);
-    String getCityName();
+    ICounty[] getCountyList ();
+
+    int getCountyLength ();
+
+    ICounty addCounty (String countyName);
+
+    String getCityName ();
 }
 
 interface ICounty {
-    String getCountyName();
+    String getCountyName ();
 }
 
 public class AdministrativeArea {
@@ -25,7 +31,8 @@ public class AdministrativeArea {
     private IProvince[] provinceList = new Province[5];
     private int provinceLength = 0;
 
-    public AdministrativeArea () {}
+    public AdministrativeArea () {
+    }
 
     public int getProvinceLength () {
         return provinceLength;
@@ -36,14 +43,14 @@ public class AdministrativeArea {
     }
 
     public Province addProvince (String provinceName) {
-        Province province  = new Province(provinceName);
+        Province province = new Province(provinceName);
 
         if (provinceLength >= provinceList.length) {
             int len = provinceList.length * 2;
             provinceList = Arrays.copyOf(provinceList, len);
         }
 
-        provinceList[provinceLength ++] = province;
+        provinceList[provinceLength++] = province;
 
         return province;
     }
@@ -53,7 +60,8 @@ public class AdministrativeArea {
         private ICity[] cityList = new City[5];
         private int cityLength;
 
-        public Province () {}
+        public Province () {
+        }
 
         public Province (String name) {
             provinceName = name;
@@ -71,7 +79,7 @@ public class AdministrativeArea {
                 cityList = Arrays.copyOf(cityList, len);
             }
 
-            cityList[cityLength ++] = city;
+            cityList[cityLength++] = city;
 
             return city;
         }
@@ -90,7 +98,8 @@ public class AdministrativeArea {
             private ICounty[] countyList = new County[5];
             private int countyLength;
 
-            public City () {}
+            public City () {
+            }
 
             public City (String name) {
                 cityName = name;
@@ -116,7 +125,7 @@ public class AdministrativeArea {
                     countyList = Arrays.copyOf(countyList, len);
                 }
 
-                countyList[countyLength ++] = county;
+                countyList[countyLength++] = county;
 
                 return county;
             }
@@ -124,7 +133,8 @@ public class AdministrativeArea {
             private class County implements ICounty {
                 private String countyName;
 
-                public County () {}
+                public County () {
+                }
 
                 public County (String name) {
                     countyName = name;
