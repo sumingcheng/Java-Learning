@@ -21,5 +21,17 @@ public class Test {
         Printer<String, Number> stringPrinter = new Printer<>("Hello World!", 1);
         String res = stringPrinter.print();
         System.out.println(res);
+
+        boolean isEqual = stringPrinter.myEquals("Hello World!");
+        System.out.println(isEqual);
+
+        NumberPrinter<Integer> numberPrinter = new NumberPrinter<>(100);
+        numberPrinter.print();
+
+        NumberPrinter<Double> numberPrinter1 = new NumberPrinter<>(100.0);
+        numberPrinter1.print();
+
+        NumberPrinter<Float> numberPrinter2 = new NumberPrinter<>(100.0f);
+        numberPrinter2.print();
     }
 }

@@ -16,4 +16,7 @@ public class Printer<T, K> {
         return value;
     }
 
+    public <V> boolean myEquals (V val) {
+        return val.equals(value);
+    }
 }
