@@ -34,7 +34,11 @@ public class Test {
 //        NumberPrinter<Float> numberPrinter2 = new NumberPrinter<>(100.0f);
 //        numberPrinter2.print();
 
-        MyTest myTest = new MyTest(100);
-        myTest.printType();
+//        MyTest myTest = new MyTest(100);
+//        myTest.printType();
+//
+//        MyTest myTest1 = new MyTest("Hello World!");
+//        myTest1.printType();
+
     }
 }
