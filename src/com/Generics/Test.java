@@ -40,5 +40,15 @@ public class Test {
 //        MyTest myTest1 = new MyTest("Hello World!");
 //        myTest1.printType();
 
+
+        Child<String> child = new Child<>("Hello World!");
+        System.out.printf("child.getName(): %s\n", child.getName());
+        child.setName("admin");
+        System.out.printf("child.getName(): %s\n", child.getName());
+
+        Child<Integer> child1 = new Child<>(100);
+        System.out.printf("child1.getName(): %d\n", child1.getName());
+        child1.setName(101);
+        System.out.printf("child1.getName(): %d\n", child1.getName());
     }
 }
