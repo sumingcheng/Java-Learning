@@ -41,14 +41,20 @@ public class Test {
 //        myTest1.printType();
 
 
-        Child<String> child = new Child<>("Hello World!");
-        System.out.printf("child.getName(): %s\n", child.getName());
-        child.setName("admin");
-        System.out.printf("child.getName(): %s\n", child.getName());
+//        Child<String> child = new Child<>("Hello World!");
+//        System.out.printf("child.getName(): %s\n", child.getName());
+//        child.setName("admin");
+//        System.out.printf("child.getName(): %s\n", child.getName());
+//
+//        Child<Integer> child1 = new Child<>(100);
+//        System.out.printf("child1.getName(): %d\n", child1.getName());
+//        child1.setName(101);
+//        System.out.printf("child1.getName(): %d\n", child1.getName());
 
-        Child<Integer> child1 = new Child<>(100);
-        System.out.printf("child1.getName(): %d\n", child1.getName());
-        child1.setName(101);
-        System.out.printf("child1.getName(): %d\n", child1.getName());
+        IPrinter<String> stringPrinter = new PrinterImpl<>();
+        stringPrinter.print("Hello, world!");
+
+        IPrinter<Integer> integerPrinter = new PrinterImpl<>();
+        integerPrinter.print(12345);
     }
 }
