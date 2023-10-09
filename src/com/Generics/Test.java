@@ -51,10 +51,17 @@ public class Test {
 //        child1.setName(101);
 //        System.out.printf("child1.getName(): %d\n", child1.getName());
 
-        IPrinter<String> stringPrinter = new PrinterImpl<>();
-        stringPrinter.print("Hello, world!");
+//        IPrinter<String> stringPrinter = new PrinterImpl<>();
+//        stringPrinter.print("Hello, world!");
+//
+//        IPrinter<Integer> integerPrinter = new PrinterImpl<>();
+//        integerPrinter.print(12345);
 
-        IPrinter<Integer> integerPrinter = new PrinterImpl<>();
-        integerPrinter.print(12345);
+//        GenericMethod genericMethod = new GenericMethod();
+//        boolean isEqual = genericMethod.myEquals("Hello World", "Hello World!");
+//        System.out.println(isEqual);
+
+        GenericMethod.getType(1, "2", 3.0, 4, 5);
+
     }
 }
