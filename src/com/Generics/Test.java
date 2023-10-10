@@ -61,7 +61,14 @@ public class Test {
 //        boolean isEqual = genericMethod.myEquals("Hello World", "Hello World!");
 //        System.out.println(isEqual);
 
-        GenericMethod.getType(1, "2", 3.0, 4, 5);
+//        GenericMethod.getType(1, "2", 3.0, 4, 5);
 
+
+        MyTools<Integer> myTools = new MyTools<>(100);
+        getInfo(myTools);
+    }
+
+    public static void getInfo (MyTools<?> myTools) {
+        myTools.getType();
     }
 }
