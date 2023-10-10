@@ -68,7 +68,8 @@ public class Test {
         getInfo(myTools);
     }
 
-    public static void getInfo (MyTools<?> myTools) {
+    public static void getInfo (MyTools<? extends Number> myTools) {
         myTools.getType();
     }
+
 }
