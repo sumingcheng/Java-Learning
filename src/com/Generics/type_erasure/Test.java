@@ -5,8 +5,8 @@ import java.lang.reflect.Method;
 
 public class Test {
     public static void main (String[] args) {
-        ErasureTest<Integer> erasureTest = new ErasureTest<>(100);
-        Class<? extends ErasureTest> classFile = erasureTest.getClass();
+//        ErasureTest<Integer> erasureTest = new ErasureTest<>(100);
+//        Class<? extends ErasureTest> classFile = erasureTest.getClass();
 
 //        Field[] allFields = classFile.getDeclaredFields();
 //
@@ -14,9 +14,18 @@ public class Test {
 //            System.out.printf(field.getName() + ":" + field.getType().getSimpleName()); // Object
 //        }
 
-        Method[] allMethod = classFile.getDeclaredMethods();
+//        Method[] allMethod = classFile.getDeclaredMethods();
+//        for (Method method : allMethod) {
+//            System.out.println(method.getName() + ":" + method.getReturnType().getSimpleName());
+//        }
+
+        Class<TestImpl> testClass = TestImpl.class;
+
+        Method[] allMethod = testClass.getDeclaredMethods();
+
         for (Method method : allMethod) {
             System.out.println(method.getName() + ":" + method.getReturnType().getSimpleName());
         }
+
     }
 }
