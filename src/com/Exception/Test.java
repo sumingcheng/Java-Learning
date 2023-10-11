@@ -12,16 +12,18 @@ public class Test {
 //            System.out.println(e);
 //        }
 
-//        Student[] arr = {
-//                new Student("张三", 18);
-//        }
+        Student[] arr = {
+                new Student("张三", 18),
+                new Student("张4", 12),
+        };
+        System.out.println(Arrays.toString(arr));
 
-        Object x = new String("hello");
-        try {
-            Integer i = (Integer) x;
-        } catch (ClassCastException e) {
-            e.printStackTrace();
-        }
+//        Object x = new String("hello");
+//        try {
+//            Integer i = (Integer) x;
+//        } catch (ClassCastException e) {
+//            e.printStackTrace();
+//        }
     }
 
     public static void div (int a, int b) {
@@ -36,8 +38,8 @@ public class Test {
         return str.length();
     }
 
-//    public static Student[] getSortedArr (Student[] arr) {
-//        Arrays.sort(arr);
-//        return arr;
-//    }
+    public static Student[] getSortedArr (Student[] arr) {
+        Arrays.sort(arr);
+        return arr;
+    }
 }
