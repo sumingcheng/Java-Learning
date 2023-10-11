@@ -1,0 +1,28 @@
+@startmindmap
+
+*_ Iterator 迭代器接口
+**[#Orange] Collection
+***[#Pink] List
+****[#LightGreen] ArrayList
+****[#LightGreen] LinkedList
+**** Vector
+*** Set
+****[#LightGreen] HashSet
+***** LinkedHashSet
+**** SortSet
+*****[#LightBlue] TreeSet
+****_ Set对象排序接口
+*****[#LightBlue] Comparable
+*****[#LightBlue] Comparator
+
+
+left side
+** ListIterator
+
+
+right side
+*_ 集合的工具类
+**[#Orange] Collections
+
+
+@endmindmap
